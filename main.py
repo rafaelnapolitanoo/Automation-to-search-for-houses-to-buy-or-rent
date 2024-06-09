@@ -25,13 +25,25 @@ def preencher_formulario():
         
     print(60* '-_-_')
     print("Digite sim, nao, indiferente ou valores")
+    
     localizacao = input("Localização(bairro):").upper()
     alugar_comprar = input("Alugar ou Comprar:").upper()
     apt_casa_vilagio = input("Casa apt ou cond fechado:").upper()
-    qnt_quartos = input("Qnt quarto:").upper()
+
+    qnt_quartos_min = input("Qnt quarto:").upper()
+    qnt_quartos_min = int(qnt_quartos_min)
+
     preco_max = input("Preço max:").upper()
-    garagem = input("Garagem:").upper()
-    m2 = input("m2 max:").upper()
+    preco_max = int(preco_max)
+
+    garagem = input("Quantidade Garagem min:").upper()
+    garagem = int(garagem)
+
+    banheiro = input("Quantidade banheiros min:").upper()
+    banheiro = int(banheiro)
+
+    m2 = input("m2 min:").upper()
+    m2 = int(m2)
 
     return localizacao, alugar_comprar, apt_casa_vilagio, qnt_quartos, preco_max, garagem, m2 
 

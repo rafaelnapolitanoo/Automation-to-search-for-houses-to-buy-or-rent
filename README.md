@@ -10,26 +10,10 @@ qunatidade de quartos tem o id =  "quartos{numquartosmin}" CONSEGUII
 
 amanha resolver o problema dos elemntos clicaveis (botao de cookies entendi ==  class = "body2__Paragraph-xstna9-0") o problema é esse botao mesmo, nao o de notificacao
 
-## contexto gpt:
-preciso que o codigo espere ate o elemento da ultima linha de codigo apareça para que ele clique no botao de cookies e assim permita a funcao posterior roda
+01/06
+resolvido o problema de aceitar os cookies, tentei com uma abordagem bruta de time.sleep mas nao fui bem sucedido, criei um loop while para esperar qualquer elemento com a classe aparecer na tela mas o batao nao aparecia
+Demorei um pouco pra entender que o batao so aparece depois de duas acoes realizadas na tela, entao coloquei o loop apos o preenchimento da loc e se vai alugar, apos aceitar a confirmação o codigo preenche o restante das informações tranquilamente
 
-from selenium import webdriver
-from selenium.webdriver.chrome.service import Service
-from webdriver_manager.chrome import ChromeDriverManager
-from selenium.webdriver.common.by import By
-from selenium.webdriver.common.keys import Keys
-import time
-
-
-# ! options é para quando o selenium abre e fecha sozinho
-options = webdriver.ChromeOptions()
-options.add_experimental_option("detach", True)
-
-servico = Service(ChromeDriverManager().install())
-driver = webdriver.Chrome(service=servico, options=options)
-driver.get("https://www.chavesnamao.com.br/imoveis/brasil/") 
-time.sleep(6)
-driver.find_element(By.CLASS_NAME, "body2__Paragraph-xstna9-0").click()
 =======
 O intuito da aplicação é agilizar minha rotina, estou buscando casas para alugar/comprar em outra cidade porque irei me mudar, mas não tenho tempo o suficiente para encontrar a casa ideal que atenda minhas espectativas 
 
