@@ -1,25 +1,76 @@
-# Automation to search for houses to buy or rent
- 
-<<<<<<< HEAD
-ideia: fazer um for por cador bloco de informaçoes e selecionar por meio de info de pequenas diferenças
+# Automation-to-search-for-houses-to-buy-or-rent
 
-30/05
-xpath a mao dos itens <li>
+É uma aplicação desenvolvida para facilitar a busca por casas para alugar/comprar em outra cidade, otimizando a rotina de pesquisa.
 
-qunatidade de quartos tem o id =  "quartos{numquartosmin}" CONSEGUII
+## Índice
 
-amanha resolver o problema dos elemntos clicaveis (botao de cookies entendi ==  class = "body2__Paragraph-xstna9-0") o problema é esse botao mesmo, nao o de notificacao
+- [Sobre](#sobre)
+- [Instalação](#instalação)
+- [Funcionalidades](#funcionalidades)
+- [Tecnologias](#tecnologias)
+- [Contribuição](#contribuição)
+- [Licença](#licença)
+- [Contato](#contato)
 
-01/06
-resolvido o problema de aceitar os cookies, tentei com uma abordagem bruta de time.sleep mas nao fui bem sucedido, criei um loop while para esperar qualquer elemento com a classe aparecer na tela mas o batao nao aparecia
-Demorei um pouco pra entender que o batao so aparece depois de duas acoes realizadas na tela, entao coloquei o loop apos o preenchimento da loc e se vai alugar, apos aceitar a confirmação o codigo preenche o restante das informações tranquilamente
+## Sobre
 
-=======
-O intuito da aplicação é agilizar minha rotina, estou buscando casas para alugar/comprar em outra cidade porque irei me mudar, mas não tenho tempo o suficiente para encontrar a casa ideal que atenda minhas espectativas 
+O Projeto foi criado com o objetivo de agilizar a busca por casas para alugar/comprar em outra cidade, simplificando o preenchimento de formulários nos sites 'chaves na mão' e 'quinto andar'. A aplicação permite inserir valores desejados através de inputs, preenchendo automaticamente os campos de formulário com os dados recebidos. Além disso, é possível aplicar filtros como área mínima, número de quartos, banheiros, garagens e localização.
 
-Então iniciei o projeto criando uma função que recebe os valores desejados (oriundos de inputs) e preenche os campos de formulário com os dados recebidos (formulário dos sites chaves na mão e quinto andar) assim facilita a busca e aplica os filtros desejados de área min, qnt quartos, banheiros, garagens, localização.
+## Instalação
 
-Durante a busca utilizei um Xparh que pega os 7 primeiros itens correspondentes aos filtros retornando uma lista com uma pequena descrição e o link dos  anúncios.
+Passo a passo de como instalar e configurar o ambiente de desenvolvimento. Por exemplo:
+
+```bash
+# Clone o repositório
+git clone https://github.com/rafaelnapolitanoo/Automation-to-search-for-houses-to-buy-or-rent
+```
+
+## Instale as dependências
+npm install
+
+
+bash
+Copiar código 
+
+## Para iniciar o projeto
+npm start
+Adicione exemplos de uso, se necessário, como trechos de código:
+
+resultado = exemplo.funcao_principal()
+print(resultado)
+
+## Funcionalidades
+ Liste as principais funcionalidades do projeto:
+
+- Preenchimento automático de formulários nos sites 'chaves na mão' e 'quinto andar' com dados recebidos via inputs.
+- Aplicação de filtros personalizados como área mínima, número de quartos, banheiros, garagens e localização.
+- Busca automatizada utilizando XPath para recuperar os primeiros 7 resultados correspondentes aos filtros, apresentando uma breve descrição e o link para os anúncios.
+## Tecnologias
+Liste as principais tecnologias usadas no projeto:
+
+- Python
+- Selenium 
+  
+## Contribuição
+Como outros desenvolvedores podem contribuir para o projeto, exemplo:
+
+<p> Faça um fork do projeto </p>
+<p> Crie uma branch para sua feature (git checkout -b feature/AmazingFeature) </p>
+<p> Commit suas mudanças (git commit -m 'Add some AmazingFeature') </p>
+<p> Envie para a branch (git push origin feature/AmazingFeature) </p>
+<p> Abra um Pull Request </p>
+
+
+
+
+## Licença
+Este projeto está licenciado sob a Licença MIT - veja o arquivo LICENSE para mais detalhes.
+
+## Contato
+Rafael Napolitano
+LinkedIn: https://www.linkedin.com/in/rafaelnapolitano/
+
+
 
 
 
