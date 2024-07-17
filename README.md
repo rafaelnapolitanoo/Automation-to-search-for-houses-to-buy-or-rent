@@ -25,19 +25,6 @@ Passo a passo de como instalar e configurar o ambiente de desenvolvimento. Por e
 git clone https://github.com/rafaelnapolitanoo/Automation-to-search-for-houses-to-buy-or-rent
 ```
 
-## Instale as dependências
-npm install
-
-
-bash
-Copiar código 
-
-## Para iniciar o projeto
-npm start
-Adicione exemplos de uso, se necessário, como trechos de código:
-
-resultado = exemplo.funcao_principal()
-print(resultado)
 
 ## Funcionalidades
  Liste as principais funcionalidades do projeto:
